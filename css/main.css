@@ -1,3 +1,75 @@
-.hidden {
-    display: none;
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+body { 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+header {
+    background-color: rgb(119, 250, 178);
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+#main-logo { width: 300px; padding: 10px 0; }
+
+#character_nav {
+    text-align: center;
+    background-color: #474545;
+
+    background-image: url(../images/MB_Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.characters { list-style-type: none; }
+
+.characters li { 
+    position: relative;
+    display: inline-block;
+    height: 220px;
+    margin: 10px 8px;
+
+    background-color: rgb(136, 132, 132);
+
+    text-align: left;
+    cursor: pointer;
+}
+
+.characters li h5 {
+    position: relative;
+    color: white;
+    padding: 12px 8px;
+
+    z-index: 500;
+}
+
+article { padding: 20px; }
+
+
+article h3  {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+article p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
 }
