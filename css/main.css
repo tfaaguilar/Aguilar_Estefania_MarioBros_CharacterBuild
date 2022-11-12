@@ -41,7 +41,7 @@ header {
     position: relative;
     display: inline-block;
     height: 180px;
-    margin: 10px 8px;
+    margin: 30px 10px;
 
     background-color: rgba(29, 2, 2, 0.781);
 
@@ -99,7 +99,7 @@ article p {
 #Peach { background-position: -300px 0; }
 #Toad { background-position: -451px 0; }
 #Bowser { background-position: -605px 0; }
-#Yoshi { background-position: -756px 0; }
+#Yoshi { background-position: -755px 0; }
 
 .sprite:hover { background-position-y: -151px !important; }
 
