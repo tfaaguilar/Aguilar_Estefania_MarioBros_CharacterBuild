@@ -61,6 +61,7 @@ header {
     z-index: 500;
 }
 
+
 .characters li a { text-decoration: none; }
 
 .red_bumper {
@@ -74,6 +75,8 @@ header {
 }
 
 .characters li:hover .red_bumper { height: 70px; }
+
+
 
 article { padding: 20px; }
 
@@ -91,6 +94,7 @@ article p {
     line-height: 1.2;
     text-align: center;
     margin: 0 auto;
+
 }
 
 .sprite {
@@ -122,3 +126,4 @@ footer {
     height: 80px;
     background-color: rgb(17, 49, 4);
 }
+
