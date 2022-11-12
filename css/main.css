@@ -155,7 +155,7 @@ footer {
     font-weight: bolder;
 }
 
-.lightbox_close:hover { opacity: 0.5; color: red; }
+.lightbox_close:hover { opacity: 0.5; color: rgb(5, 0, 0); }
 
 .lightbox article {
     width: 55%;
