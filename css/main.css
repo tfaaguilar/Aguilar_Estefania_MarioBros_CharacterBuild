@@ -43,7 +43,7 @@ header {
     height: 180px;
     margin: 10px 8px;
 
-    background-color: rgb(136, 132, 132);
+    background-color: rgba(24, 4, 2, 0.815);
 
     text-align: left;
     cursor: pointer;
@@ -88,8 +88,13 @@ article p {
 }
 
 .sprite {
+
+    width: 145px;
+    height: 145px;
+
     width: 148px;
     height: 150px;
+
     
     background-image: url('../images/Characters_Sprite.jpg');
 }
