@@ -91,7 +91,7 @@ article p {
     width: 148px;
     height: 150px;
     
-    background-image: url('../images/Characters_Sprite.jpg');
+    background-image: url(../images/MarioBros_Sprite.jpg);
 }
 
 #Mario { background-position:  1px 0; }
