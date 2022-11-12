@@ -1,7 +1,3 @@
-.hidden {
-    display: none;
-}
-
 * {
     border: none;
     padding: 0;
@@ -15,8 +11,8 @@ html, body { height: 100% }
 
 body { 
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: black;
-  color: white;
+  background-color: rgb(14, 1, 1);
+  color: rgb(255, 255, 255);
 }
 
 header {
@@ -30,7 +26,7 @@ header {
 
 #character_nav {
     text-align: center;
-    background-color: #474545;
+    background-color: #c7c0c0;
 
     background-image: url(../images/MB_Wallpaper.jpg);
     background-repeat: no-repeat;
@@ -44,7 +40,7 @@ header {
 .characters li { 
     position: relative;
     display: inline-block;
-    height: 220px;
+    height: 180px;
     margin: 10px 8px;
 
     background-color: rgba(24, 4, 2, 0.815);
@@ -56,30 +52,26 @@ header {
 .characters li h5 {
     position: relative;
     color: white;
-    padding: 12px 8px;
+    padding: 12px 50px;
 
     z-index: 500;
 }
-
 
 .characters li a { text-decoration: none; }
 
 .red_bumper {
     width: 100%;
-    height: 5px;
-    background-color: rgb(64, 33, 136);
+    height: 6px;
+    background-color: rgb(92, 8, 172);
 
     transition: height 0.5s ease;
 
     position: absolute;
 }
 
-.characters li:hover .red_bumper { height: 70px; }
-
-
+.characters li:hover .red_bumper { height: 40px; }
 
 article { padding: 20px; }
-
 
 article h3  {
     font-size: 2em;
@@ -87,19 +79,22 @@ article h3  {
     margin-bottom: 14px;
 }
 
-
 article p {
     width: 80%;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.2;
     text-align: center;
     margin: 0 auto;
-
 }
 
 .sprite {
+
     width: 145px;
     height: 145px;
+
+    width: 148px;
+    height: 150px;
+
     
     background-image: url('../images/Characters_Sprite.jpg');
 }
@@ -111,7 +106,7 @@ article p {
 #Bowser { background-position: -600px 0; }
 #Yoshi { background-position: -750px 0; }
 
-.sprite:hover { background-position-y: -150px !important; }
+.sprite:hover { background-position-y: -151px !important; }
 
 footer {
     color: white;
@@ -124,6 +119,59 @@ footer {
     top: 100%;
 
     height: 80px;
-    background-color: rgb(17, 49, 4);
+    background-color: rgb(14, 1, 36);
 }
 
+.lightbox { 
+    width: 100vw; 
+    height: 100vh; 
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(46, 1, 1, 0.96);
+    background-image: url('../images/Mario_LB.png');
+    background-repeat: no-repeat;
+
+    background-size: 100vh;
+    background-position: 50px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+#lightbox2 { background-image: url('../images/Luigi_LB.png'); }
+#lightbox2 { background-color: rgba(25, 73, 2, 0.96);}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 2em;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+}
+
+.lightbox_close:hover { opacity: 0.5; color: rgb(251, 255, 0); }
+
+.lightbox article {
+    width: 55%;
+    margin-left: 50%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+.lightbox:target { display: block; }
