@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 * {
     border: none;
     padding: 0;
@@ -57,21 +61,6 @@ header {
     z-index: 500;
 }
 
-.characters li a { text-decoration: none; }
-
-.red_bumper {
-    width: 100%;
-    height: 6px;
-    background-color: rgb(92, 8, 172);
-
-    transition: height 0.2s ease;
-
-    position: absolute;
-}
-
-.characters li:hover .red_bumper { height: 70px; }
-
-
 article { padding: 20px; }
 
 
@@ -81,27 +70,29 @@ article h3  {
     margin-bottom: 14px;
 }
 
+
 article p {
     width: 80%;
     font-size: 18px;
     line-height: 1.2;
     text-align: center;
     margin: 0 auto;
+
 }
 
 .sprite {
     width: 150px;
     height: 150px;
     
-    background-image: url('../images/Mario_Characters_Sprite.jpg');
+    background-image: url(../images/Characters_Sprite.jpg);
 }
 
-#Mario { background-position:  1px 0; }
-#Luigi { background-position: -149px 0; }
+#Mario { background-position: -0px 0; }
+#Luigi { background-position: -150px 0; }
 #Peach { background-position: -300px 0; }
 #Toad { background-position: -450px 0; }
 #Bowser { background-position: -600px 0; }
-#Yoshi { background-position: -750px 0; }
+#Yoshi {background-position: -750px 0;}
 
 .sprite:hover { background-position-y: -150px !important; }
 
@@ -116,59 +107,5 @@ footer {
     top: 100%;
 
     height: 80px;
-    background-color: rgb(14, 1, 36);
+    background-color: rgb(17, 49, 4);
 }
-
-.lightbox { 
-    width: 100vw; 
-    height: 100vh; 
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    background-color: rgba(46, 1, 1, 0.96);
-    background-image: url('../images/Mario_LB.png');
-    background-repeat: no-repeat;
-
-    background-size: 100vh;
-    background-position: 50px bottom;
-
-    z-index: 5000;
-
-    display: none;
-}
-
-#lightbox2 { background-image: url('../images/Luigi_LB.png'); }
-#lightbox2 { background-color: rgba(25, 73, 2, 0.96);}
-
-.lightbox_close {
-    position: relative;
-    top: 20px;
-    left: 95%;
-
-    color: white;
-    font-size: 2em;
-
-    text-decoration: none;
-
-    font-weight: bolder;
-}
-
-.lightbox_close:hover { opacity: 0.5; color: rgb(5, 0, 0); }
-
-.lightbox article {
-    width: 55%;
-    margin-left: 50%;
-    padding-top: 50px;
-}
-
-.lb_text, .lb_heading { text-align: left; }
-
-.lb_text {
-    line-height: 1.6 !important;
-    margin-left: 0;
-    padding-top: 2em;
-}
-
-.lightbox:target { display: block; }
