@@ -41,9 +41,13 @@ header {
     position: relative;
     display: inline-block;
     height: 180px;
-    margin: 10px 8px;
+    margin: 30px 10px;
+
+
+    background-color: rgba(29, 2, 2, 0.781);
 
     background-color: rgba(24, 4, 2, 0.815);
+
 
     text-align: left;
     cursor: pointer;
@@ -92,19 +96,24 @@ article p {
     width: 145px;
     height: 145px;
 
+
+    width: 145px;
+    height: 145px;
+
     width: 148px;
     height: 150px;
+
 
     
     background-image: url(../images/MarioBros_Sprite.jpg);
 }
 
-#Mario { background-position:  1px 0; }
-#Luigi { background-position: -149px 0; }
+#Mario { background-position:  0px 0; }
+#Luigi { background-position: -150px 0; }
 #Peach { background-position: -300px 0; }
-#Toad { background-position: -450px 0; }
-#Bowser { background-position: -600px 0; }
-#Yoshi { background-position: -750px 0; }
+#Toad { background-position: -451px 0; }
+#Bowser { background-position: -605px 0; }
+#Yoshi { background-position: -755px 0; }
 
 .sprite:hover { background-position-y: -151px !important; }
 
