@@ -15,7 +15,7 @@ html, body { height: 100% }
 
 body { 
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: black;
+  background-color: rgb(14, 1, 1);
   color: white;
 }
 
@@ -61,23 +61,6 @@ header {
     z-index: 500;
 }
 
-
-.characters li a { text-decoration: none; }
-
-.red_bumper {
-    width: 100%;
-    height: 5px;
-    background-color: rgb(64, 33, 136);
-
-    transition: height 0.5s ease;
-
-    position: absolute;
-}
-
-.characters li:hover .red_bumper { height: 70px; }
-
-
-
 article { padding: 20px; }
 
 
@@ -101,7 +84,7 @@ article p {
     width: 150px;
     height: 150px;
     
-    background-image: url(../images/Mario_Characters_Sprite.jpg);
+    background-image: url(../images/Characters_Sprite.jpg);
 }
 
 #Mario { background-position: -0px 0; }
@@ -126,4 +109,3 @@ footer {
     height: 80px;
     background-color: rgb(17, 49, 4);
 }
-
