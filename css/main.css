@@ -43,7 +43,11 @@ header {
     height: 180px;
     margin: 30px 10px;
 
+
     background-color: rgba(29, 2, 2, 0.781);
+
+    background-color: rgba(24, 4, 2, 0.815);
+
 
     text-align: left;
     cursor: pointer;
@@ -88,8 +92,18 @@ article p {
 }
 
 .sprite {
+
     width: 145px;
     height: 145px;
+
+
+    width: 145px;
+    height: 145px;
+
+    width: 148px;
+    height: 150px;
+
+
     
     background-image: url(../images/MarioBros_Sprite.jpg);
 }
